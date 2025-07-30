@@ -1,10 +1,5 @@
 # 2419. Longest Subarray With Maximum Bitwise AND
-# Solved
-# Medium
-# Topics
-# premium lock icon
-# Companies
-# Hint
+
 # You are given an integer array nums of size n.
 
 # Consider a non-empty subarray from nums that has the maximum possible bitwise AND.
