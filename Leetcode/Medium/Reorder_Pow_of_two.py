@@ -19,3 +19,14 @@
 # 1 <= n <= 109
 
 
+from collections import Counter
+class Solution:
+    def reorderedPowerOf2(self, n: int) -> bool:
+        freq = Counter(str(n))
+        for power in range(31):
+            powerOfTwo = 1 << power
+            freq_of_power = Counter(str(powerOfTwo))
+
+            if freq == freq_of_power:
+                return True
+        return False
