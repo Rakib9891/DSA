@@ -14,3 +14,14 @@
 # There is no occurrence of a subarray with a size more than 2 filled with 0. Therefore, we return 6.
 
 
+class Solution:
+    def zeroFilledSubarray(self, nums: List[int]) -> int:
+        total = 0
+        cnt = 0
+        for n in nums:
+            if n == 0:
+                cnt += 1
+                total += cnt
+            else:
+                cnt = 0
+        return total
